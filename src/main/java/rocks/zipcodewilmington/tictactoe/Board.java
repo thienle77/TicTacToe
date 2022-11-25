@@ -29,10 +29,10 @@ public class Board {
     }
 
     public Boolean diagonal(char c) {
-        if (board[0] [0].equals (c) && board[0][0].equals (board [1] [1]) && board[0] [0].equals (board [2] [2])) {
+        if (board[0][0].equals (c) && board[0][0].equals (board[1][1]) && board[0][0].equals (board[2][2])) {
             return true;
         }
-        return board[0] [2].equals(c) && board[0][2].equals (board [1] [1]) && board [0] [2].equals(board[2][0]);
+        return board[0][2].equals(c) && board[0][2].equals (board[1][1]) && board [0][2].equals(board[2][0]);
     }
     public Boolean isInFavorOfX() {
         char c = 'X';
